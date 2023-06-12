@@ -61,15 +61,11 @@ _btns.forEach(btn => {
           
             _h3pc[1].style.transform = 'rotateY(-180deg)translateX(110px)'
         }
-        if (temp == 2) {
-            console.log('40000', _h3pc[1]);
-          
+        if (temp == 2) {          
             _h3pc[1].style.transform = 'rotateZ(-90deg)translate(40px, -100px)'
         }
         if(temp == 1){
             _h3pc[1].style.transform = 'rotateZ(0deg)translateX(-70px)'
-
-            console.log('ttttttttttttr');
         }
         _pcChoose()
 
@@ -92,33 +88,21 @@ _btns.forEach(btn => {
                     if (_h3[1].innerHTML == '✌️' && temp == 0) {
                         _pcScoreCount++
                         _pcScore.innerHTML = `Score: ${_pcScoreCount}`
-                        console.log('pc Winer');
                     }
                     else if (_h3[1].innerHTML == '🤜' && temp == 1) {
                         _pcScoreCount++
                         _pcScore.innerHTML = `Score: ${_pcScoreCount}`
-                        console.log('pc Winer');
                     }
                     else if (_h3[1].innerHTML == '🖖' && temp == 2) {
                         _pcScoreCount++
                         _pcScore.innerHTML = `Score: ${_pcScoreCount}`
-                        console.log('pc Winer');
                     }
                 } _pcWin()
             }
         }
         _userWin()
-
-        // equal
-        if (_h3[1].innerHTML == _pcChoose()) {
-            console.log('equal');
-        }
         _gameCount.innerHTML = `
-                       <strong>${q}/5</strong>
-                `
-        if (q > 5) {
-            console.log(q);
-        }
+                       <strong>${q}/5</strong>`
     })
 
 })
