@@ -57,32 +57,36 @@ main > .mainGame > .pc > h3 {
   padding-left: 100px;
 }
 main > .mainGame > .pc > span {
-  padding-right: 100px;
+  padding-left: -100px;
   font-size: 50px;
+  display: block;
 }
 main > .btns {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-main > .btns > #scissors {
-  transform: rotateZ(-90deg);
-}
 main > .btns > * {
   height: 120px;
-  background-color: rgb(179, 143, 52);
   margin-right: 20px;
   font-size: 50px;
   width: 120px;
   border: none;
   outline: none;
-  border-radius: 30px;
-  text-shadow: 3px 0 0 black;
-  box-shadow: 0px 0px 20px 1px rgb(121, 100, 100);
+  border-radius: 35px;
+  background: linear-gradient(145deg, rgb(156, 121, 31), rgb(238, 203, 115));
+  box-shadow: 8px 8px 36px #b1b198, -8px -8px 36px #858569;
 }
 main > .btns > *:hover {
   -webkit-animation: anime1 linear 1s alternate forwards;
           animation: anime1 linear 1s alternate forwards;
+}
+main > .btns > .scissors {
+  transform: rotateZ(-90deg);
+}
+main > .btns > .scissors:hover {
+  -webkit-animation: anime2 linear 1s alternate forwards;
+          animation: anime2 linear 1s alternate forwards;
 }
 @-webkit-keyframes anime1 {
   to {
@@ -92,5 +96,15 @@ main > .btns > *:hover {
 @keyframes anime1 {
   to {
     transform: scale(1.2);
+  }
+}
+@-webkit-keyframes anime2 {
+  to {
+    transform: rotateZ(-90deg) scale(1.2);
+  }
+}
+@keyframes anime2 {
+  to {
+    transform: rotateZ(-90deg) scale(1.2);
   }
 }/*# sourceMappingURL=style.css.map */

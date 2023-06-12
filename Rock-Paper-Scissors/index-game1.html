@@ -1,4 +1,4 @@
-<!DOCTYPE html>user
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,13 +11,13 @@
     <main>
         <div class="score">
             <div class="userSource">Score:</div>
-        <div class="compSource">Score:</div>
+        <div class="pcSource">Score:</div>
         </div>
         <hr>
-        <div class="gameCount">0/10</div>
+        <div class="gameCount"><strong>0/5</strong></div>
         <div class="mainGame">
             <div class="user">
-                <h3>Me</h3>
+                <h3>You</h3>
                 <span>🤜</span>
             </div>
             <div class="pc">
@@ -29,9 +29,11 @@
         <div class="btns">
             <button id="rock">🤜</button>
             <button id="paper">🖖</button>
-            <button id="scissors">✌️</button>
+            <button class="scissors">✌️</button>
         </div>
         <hr>
+        <audio src="./audio/win.mp3" id="win"></audio>
+        <audio src="./audio/fail.mp3" id="fail"></audio>
     </main>
 
 
